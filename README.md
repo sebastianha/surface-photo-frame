@@ -25,3 +25,9 @@ And to my surprise they are dirt cheap because you can find some with a (partial
 <img src='kleinanzeigen.jpg' width='500'>
 
 So this is a perfect match!
+
+## Installation Manual
+
+### Operating System
+
+...
