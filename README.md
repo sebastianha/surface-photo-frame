@@ -10,7 +10,7 @@ I wanted to have a digital photo frame which fulfills the following requirements
 
 So I did research and stumbled upon the Microsoft Surface Go (1st generation):
 
-<img src='surface.png' width='500'>
+<img src='images/surface.png' width='500'>
 
 It features:
 - A really good build quality, including a built-in stand
@@ -22,7 +22,7 @@ It features:
 
 And to my surprise they are dirt cheap because you can find some with a (partially) broken touchscreen on Kleinanzeigen (German craigslist):
 
-<img src='kleinanzeigen.jpg' width='500'>
+<img src='images/kleinanzeigen.jpg' width='500'>
 
 So this is a perfect match!
 
