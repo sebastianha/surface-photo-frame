@@ -7,6 +7,7 @@ I wanted to have a digital photo frame which fulfills the following requirements
 - Able to import photos from an online photo album
 - Remote administration / view possible
 - Only rely on open source / self hosted software (no "cloud")
+- "grandma"-proof, so it should only do one thing: show images. Everything else disabled.
 
 So I did research and stumbled upon the Microsoft Surface Go (1st generation):
 
