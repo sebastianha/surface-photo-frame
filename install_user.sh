@@ -27,8 +27,11 @@ wget https://github.com/sebastianha/surface-photo-frame/blob/main/scripts/sync_p
 wget https://github.com/sebastianha/surface-photo-frame/blob/main/scripts/toggle.sh
 chmod +x /home/user/bin/*.sh
 
-echo "user ...create contab entries"
+echo "...user: create contab entries"
 (crontab -l 2>/dev/null; echo "* * * * * /home/user/bin/autodim.sh &>/dev/null") | crontab -
 (crontab -l 2>/dev/null; echo "0 */4 * * * /home/user/bin/sync_photos.sh") | crontab -
 (crontab -l 2>/dev/null; echo "#0 21 * * * /home/user/bin/stop.sh") | crontab -
 (crontab -l 2>/dev/null; echo "#0 8 * * * /home/user/bin/start.sh") | crontab -
+
+echo "...user: syncing photos"
+/home/user/bin/sync_photos.sh
