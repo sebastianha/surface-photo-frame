@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+ILLUMINANCE_DEV="/sys/devices/pci0000:00/0000:00:13.0/{33AECD58-B679-4E54-9BD9-A04D34F0C226}/001F:8087:0AC2.000?/HID-SENSOR-200041.2.auto/iio:device?/in_illuminance_raw"
+BRIGHTNESS_DEV="/sys/class/backlight/intel_backlight/brightness"
+
+ILLUMINANCE=`cat $ILLUMINANCE_DEV`
+echo $ILLUMINANCE
+BRIGHTNESS=$(( $ILLUMINANCE / 6500 * 100 ))
+(( $BRIGHTNESS == 0 )) && BRIGHTNESS=1
+(( $BRIGHTNESS > 1500 )) && BRIGHTNESS=1500
+echo $BRIGHTNESS
+
+echo $BRIGHTNESS > $BRIGHTNESS_DEV
+
