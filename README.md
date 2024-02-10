@@ -39,4 +39,6 @@ dd if=./openSUSE-Leap-15.5-NET-x86_64-Build491.1-Media.iso of=/dev/sda bs=1M
 
 To boot from USB press and hold volume-down and then press the power button. More information here: https://support.microsoft.com/en-us/surface/boot-surface-from-a-usb-device-fe7a7323-8d1d-823d-be17-9aec89c4f9f5
 
-When installing make sure you enable X11 auto login for the user so it will boot directly into IceWM.
+When installing select "Generic Desktop" as "System Role" and make sure you enable X11 auto login for the user so it will boot directly into IceWM. Create a user called "user".
+
+
