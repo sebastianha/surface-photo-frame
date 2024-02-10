@@ -33,5 +33,8 @@ echo "...user: create contab entries"
 (crontab -l 2>/dev/null; echo "#0 21 * * * /home/user/bin/stop.sh") | crontab -
 (crontab -l 2>/dev/null; echo "#0 8 * * * /home/user/bin/start.sh") | crontab -
 
+echo "...user: please set variables"
+vi .bilderrahmen.env
+
 echo "...user: syncing photos"
 /home/user/bin/sync_photos.sh
