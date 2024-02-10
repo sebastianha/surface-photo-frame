@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "...installing packages"
-zypper install x11vnc htop xinput xbindkeys xev jq impressive wireguard-tools
+zypper install x11vnc htop xinput xbindkeys xev jq impressive
 
 echo "...ignore power key"
 echo "HandlePowerKey=ignore" >> /etc/systemd/logind.conf
