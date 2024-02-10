@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+export DISPLAY=:0
+
+# Disable screensaver
+xset -dpms
+xset s off
+
+# Start VNC
+#/usr/bin/x11vnc &
+
+# Disable Touchscreen
+xinput disable "ELAN9038:00 04F3:261A touch"
+
+# Start Powerbutton mapping
+xbindkeys
+
+# Start Slideshow
+#/usr/bin/eog -s /home/user/photos/ &
+/home/user/bin/start.sh &
